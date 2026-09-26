@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy Policy | Vuky Flow – Weight Tracker</title>
+
+  <meta
+    name="description"
+    content="Privacy Policy for Vuky Flow – Weight Tracker by Vuky Studio."
+  >
+
+  <style>
+    :root {
+      --bg: #f5f8fc;
+      --surface: rgba(255, 255, 255, 0.94);
+      --surface-soft: #f7faff;
+      --text: #101828;
+      --muted: #667085;
+      --line: #e4eaf2;
+      --blue: #1746f5;
+      --cyan: #16d9e8;
+      --navy: #071d49;
+      --shadow: 0 18px 50px rgba(22, 45, 85, 0.10);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        Inter,
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background:
+        radial-gradient(circle at 15% -10%, rgba(23, 70, 245, 0.15), transparent 32%),
+        radial-gradient(circle at 92% 5%, rgba(22, 217, 232, 0.14), transparent 28%),
+        var(--bg);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 44px 0 64px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .brand-mark {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      flex: 0 0 auto;
+      background: linear-gradient(135deg, #1439ed 5%, #0f7cf3 55%, #19d9de 100%);
+      box-shadow: 0 10px 28px rgba(23, 70, 245, 0.22);
+    }
+
+    .brand-mark::before {
+      content: "";
+      position: absolute;
+      width: 37px;
+      height: 17px;
+      left: 7px;
+      top: 17px;
+      border-bottom: 7px solid white;
+      border-radius: 0 0 50% 50%;
+      transform: rotate(-4deg);
+      opacity: 0.95;
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: white;
+      right: 8px;
+      top: 10px;
+    }
+
+    .brand-name {
+      font-size: 21px;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      color: var(--navy);
+    }
+
+    .hero {
+      padding: 54px 50px;
+      border-radius: 30px;
+      color: white;
+      background:
+        linear-gradient(135deg, rgba(8, 24, 72, 0.98), rgba(15, 80, 221, 0.95) 64%, rgba(15, 188, 207, 0.92));
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      right: -120px;
+      top: -150px;
+      border: 55px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #bfefff;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 680px;
+      font-size: clamp(34px, 6vw, 55px);
+      line-height: 1.06;
+      letter-spacing: -0.045em;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 20px 0 0;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 17px;
+    }
+
+    .meta {
+      margin-top: 24px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.66);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 28px 0 4px;
+    }
+
+    .chip {
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 650;
+      color: #e9fbff;
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+    }
+
+    .content {
+      margin-top: 28px;
+      padding: 18px 44px 38px;
+      border-radius: var(--radius);
+      background: var(--surface);
+      border: 1px solid rgba(224, 231, 241, 0.92);
+      box-shadow: var(--shadow);
+    }
+
+    section {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child {
+      border-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 22px;
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+    }
+
+    p {
+      margin: 0 0 13px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .note {
+      margin-top: 17px;
+      padding: 17px 19px;
+      border-radius: 15px;
+      background: var(--surface-soft);
+      border: 1px solid #dce8fb;
+      color: #344054;
+    }
+
+    .contact-card {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      margin-top: 16px;
+      padding: 20px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #f5f8ff, #f0fcfd);
+      border: 1px solid #dce7f8;
+    }
+
+    .contact-title {
+      font-weight: 750;
+      color: var(--navy);
+    }
+
+    .contact-email {
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    footer {
+      padding: 30px 12px 0;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding-top: 22px;
+      }
+
+      .hero {
+        padding: 38px 25px;
+        border-radius: 24px;
+      }
+
+      .content {
+        padding: 8px 23px 27px;
+      }
+
+      .contact-card {
+        display: block;
+      }
+
+      .contact-email {
+        display: inline-block;
+        margin-top: 8px;
+        white-space: normal;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #07101f;
+        --surface: rgba(12, 23, 42, 0.95);
+        --surface-soft: #0f2039;
+        --text: #edf3fb;
+        --muted: #9eafc5;
+        --line: #20334e;
+        --navy: #dceaff;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at 15% -10%, rgba(32, 86, 255, 0.21), transparent 32%),
+          radial-gradient(circle at 92% 5%, rgba(22, 217, 232, 0.13), transparent 28%),
+          var(--bg);
+      }
+
+      .content {
+        border-color: #1c3049;
+      }
+
+      .note {
+        border-color: #294464;
+        color: #cbd8e8;
+      }
+
+      .contact-card {
+        background: linear-gradient(135deg, #0e1f39, #102b3a);
+        border-color: #284765;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <header class="brand" aria-label="Vuky Studio">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div class="brand-name">Vuky Studio</div>
+    </header>
+
+    <div class="hero">
+      <div class="eyebrow">Vuky Flow – Weight Tracker</div>
+      <h1>Privacy Policy</h1>
+
+      <p>
+        Your privacy matters. Vuky Flow is designed around local storage,
+        simple weight tracking, and minimal data exposure.
+      </p>
+
+      <div class="chips">
+        <span class="chip">No account required</span>
+        <span class="chip">No ads</span>
+        <span class="chip">No external analytics</span>
+        <span class="chip">Local-first</span>
+      </div>
+
+      <div class="meta">
+        Effective date: September 26, 2026
+      </div>
+    </div>
+
+    <article class="content">
+
+      <section>
+        <h2>About this policy</h2>
+        <p>
+          This Privacy Policy explains how Vuky Flow – Weight Tracker,
+          developed by Vuky Studio, handles information in the app.
+        </p>
+      </section>
+
+      <section>
+        <h2>Information stored by the app</h2>
+        <p>
+          Vuky Flow stores information you choose to enter, including profile
+          details such as your display name and gender selection, weight
+          measurements, weight goals and dates, measurement units, progress
+          display preferences, and app language settings.
+        </p>
+
+        <p>
+          If Nutrition is enabled, the app can also store foods, portions,
+          meals, calories, macronutrients, drinks, and saved meal templates.
+          The FREE production version currently shows Nutrition as a preview
+          rather than enabling the full module.
+        </p>
+      </section>
+
+      <section>
+        <h2>Weight and wellness information</h2>
+        <p>
+          Weight measurements and goals are entered voluntarily and are used
+          to show your personal history and progress.
+        </p>
+
+        <div class="note">
+          Vuky Flow is intended for personal weight tracking and general
+          wellness. It is not a medical device and does not provide diagnosis
+          or medical treatment.
+        </div>
+      </section>
+
+      <section>
+        <h2>Local storage and accounts</h2>
+        <p>
+          App data is stored locally on your device. No account is required.
+          The app does not automatically upload app data to Vuky Studio servers.
+        </p>
+      </section>
+
+      <section>
+        <h2>Advertising, analytics, and telemetry</h2>
+        <p>
+          Vuky Flow does not use advertising SDKs or external analytics or
+          telemetry services.
+        </p>
+
+        <p>
+          Limited technical diagnostics may be stored locally on the device
+          without user content and are not sent to an external service.
+        </p>
+      </section>
+
+      <section>
+        <h2>Backup, export, and sharing</h2>
+        <p>
+          You can choose to create a JSON backup or CSV measurement export.
+          Sharing happens only after you select a destination through the
+          Android system.
+        </p>
+
+        <p>
+          The selected app or service then controls how it handles the file.
+          Vuky Studio does not receive a file merely because you use the export
+          or share feature.
+        </p>
+      </section>
+
+      <section>
+        <h2>Android system backup</h2>
+        <p>
+          Vuky Flow disables Android cloud backup and device-to-device transfer
+          for its app data. Use the app's manual JSON backup when you want a
+          portable copy.
+        </p>
+      </section>
+
+      <section>
+        <h2>Retention and deletion</h2>
+        <p>
+          Local data remains on your device until you delete relevant entries,
+          reset measurements, delete a profile, or remove the app.
+        </p>
+
+        <p>
+          Deleting a profile removes its profile settings, weight data, and
+          recorded meal entries. Some Nutrition records, including user-defined
+          foods, saved templates, or drink-related records, can remain in the
+          local database until they are separately deleted, deactivated, or
+          the app data is removed.
+        </p>
+
+        <p>
+          Removing the app removes its local app data under normal Android
+          behavior.
+        </p>
+      </section>
+
+      <section>
+        <h2>Security</h2>
+        <p>
+          Vuky Flow relies on Android app storage protections and limits file
+          sharing to files you explicitly choose to export.
+        </p>
+
+        <p>
+          No method of storage is guaranteed to be completely secure, so keep
+          exported backup files in a location you trust.
+        </p>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>
+          Vuky Flow is a general wellness tool and is not specifically directed
+          to children.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          If you have questions about this Privacy Policy or Vuky Flow's privacy
+          practices, you can contact the developer.
+        </p>
+
+        <div class="contact-card">
+          <div>
+            <div class="contact-title">Vuky Studio</div>
+            <div>Developer of Vuky Flow</div>
+          </div>
+
+          <a
+            class="contact-email"
+            href="mailto:vukystudio@gmail.com"
+          >
+            vukystudio@gmail.com
+          </a>
+        </div>
+      </section>
+
+    </article>
+
+    <footer>
+      © 2026 Vuky Studio · Vuky Flow – Weight Tracker
+    </footer>
+
+  </main>
+</body>
+</html>
